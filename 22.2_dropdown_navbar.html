@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown Navbar</title>
+	<style>
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			padding: 12px;
+			z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+		*{
+			font-family: verdana;
+			font-size: 15px;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #F3F3F3;
+			border: 0.5px solid #E7E7E7;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: #666666;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover{
+			background-color: #DDDDDD
+		}
+		li a.aktif{
+			background-color: #0008BA;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#" class="aktif">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li class="dropdown">
+			<a href="#" class="Dropdown">Dropdown</a>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</li>
+	</ul>
+
+	<h3>ini adalah contoh menu dropdown didalam navigation bar</h3>
+	<p>Coba anda hover menu <b>Dropdown</b> untuk melihat beberapa sub menu berupa link</p>
+</body>
+</html>
